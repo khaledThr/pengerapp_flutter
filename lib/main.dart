@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:penger/resources/apcolors.dart';
 import 'package:penger/resources/app_routes.dart';
+import 'package:penger/views/auth/login.dart';
+import 'package:penger/views/auth/signup.dart';
 import 'package:penger/views/onboarding/splashview.dart';
 import 'package:penger/views/onboarding/walkthrought.dart';
 
@@ -30,6 +32,8 @@ class MyApp extends StatelessWidget {
       routes: {
         AppRoutes.splash: (context) => Splashview(),
         AppRoutes.walkthrought: (context) => Walkthrought(),
+        AppRoutes.signup:(context) => Signupview(),
+        AppRoutes.login:(context)=> Loginview(),
       },
     );
   }
